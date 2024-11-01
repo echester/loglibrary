@@ -1,0 +1,51 @@
+
+@inproceedings{popoff_high-efficiency_2016,
+	title = {High-efficiency logarithmic number unit design based on an improved cotransformation scheme},
+	abstract = {The logarithmic number system (LNS) has always been an interesting alternative for floating point calculations since the implementation of several arithmetic operations such as divisions, exponentiations and square-roots, which are required for computationally intensive nonlinear functions, is greatly simplified in the logarithmic space. However, additions and subtractions become nonlinear operations that have to be approximated using polynomials for area efficient realizations. A particular challenge is the accuracy within the so-called critical region which is encountered for subtractions where the difference between the operands is close to zero. In the literature, several arithmetic cotransformations that reduce the overhead of approximating these operations have been presented. Even so, the main problem with practical LNS realizations is the area overhead when compared to standard FPUs with comparable accuracy. In this paper, we propose a highly hardware-efficient novel cotransformation concept that not only reduces the area requirements by up to 35\% when compared to the state-of-the-art, but also allows the LNU to calculate single cycle logarithms and exponentiations within the same datapath. We present comprehensive results for a complete processing system that includes the LNU and an OpenRISC based core in 65nm, and 28nm technologies. We compare this implementation with a system using a standard IEEE compliant FPU and show that the LNS based system can outperform its FP counterpart by up to 4.35?? in speed. The final, pipelined LNU system when implemented in 65nm occupies an area of 54.3 kGE, allows 89 MFLOP per second and consumes 15.9???136.7 pJ per operation at 1.2V under typical conditions and 25??C.},
+	booktitle = {2016 {Design}, {Automation} {Test} in {Europe} {Conference} {Exhibition} ({DATE})},
+	author = {Popoff, Y. and Scheidegger, F. and Schaffner, M. and Gautschi, M. and Gürkaynak, F. K. and Benini, L.},
+	month = mar,
+	year = {2016},
+	keywords = {Encoding, Europe, Hardware, Interpolation, Kernel, Standards, Table lookup},
+	pages = {1387--1392},
+	file = {07459525.pdf:C\:\\Users\\ed\\Zotero\\storage\\F6TXX3I2\\07459525.pdf:application/pdf},
+}
+
+@article{miyashita_convolutional_2016,
+	title = {Convolutional {Neural} {Networks} using {Logarithmic} {Data} {Representation}},
+	url = {http://arxiv.org/abs/1603.01025},
+	abstract = {Recent advances in convolutional neural networks have considered model complexity and hardware efficiency to enable deployment onto embedded systems and mobile devices. For example, it is now well-known that the arithmetic operations of deep networks can be encoded down to 8-bit fixed-point without significant deterioration in performance. However, further reduction in precision down to as low as 3-bit fixed-point results in significant losses in performance. In this paper we propose a new data representation that enables state-of-the-art networks to be encoded to 3 bits with negligible loss in classification performance. To perform this, we take advantage of the fact that the weights and activations in a trained network naturally have non-uniform distributions. Using non-uniform, base-2 logarithmic representation to encode weights, communicate activations, and perform dot-products enables networks to 1) achieve higher classification accuracies than fixed-point at the same resolution and 2) eliminate bulky digital multipliers. Finally, we propose an end-to-end training procedure that uses log representation at 5-bits, which achieves higher final test accuracy than linear at 5-bits.},
+	urldate = {2016-05-14},
+	journal = {arXiv:1603.01025 [cs]},
+	author = {Miyashita, Daisuke and Lee, Edward H. and Murmann, Boris},
+	month = mar,
+	year = {2016},
+	note = {arXiv: 1603.01025},
+	keywords = {Computer Science - Learning, Computer Science - Neural and Evolutionary Computing},
+	file = {Convolutional Neural Networks using Logarithmic Data Representation:C\:\\Users\\ed\\Zotero\\storage\\9DCPW2G6\\1603.01025.pdf:application/pdf;weblink:C\:\\Users\\ed\\Zotero\\storage\\CB5ZWW6G\\1603.01025.html:text/html},
+}
+
+@inproceedings{ismail_hybrid_2013,
+	title = {Hybrid logarithmic number system arithmetic unit: {A} review},
+	shorttitle = {Hybrid logarithmic number system arithmetic unit},
+	doi = {10.1109/CircuitsAndSystems.2013.6671617},
+	abstract = {Logarithmic number system (LNS) arithmetic has the advantages of high performance and high-precision in complex function computation. However, the large hardware problem in LNS addition/subtraction computation has made the large word-length LNS arithmetic implementation impractical. In this paper, the concept of merging the LNS and Floating Point (FLP) operation into a single arithmetic logic unit (ALU) that can execute addition/subtraction and division/multiplication more faster, precise and less complicated has been reviewed. The advantages of using hybrid system were highlighted while comparing and explaining about FLP and LNS.},
+	booktitle = {2013 {IEEE} {International} {Conference} on {Circuits} and {Systems} ({ICCAS})},
+	author = {Ismail, R. C. and Zakaria, M. K. and Murad, S. A. Z.},
+	month = sep,
+	year = {2013},
+	keywords = {ALU, arithmetic logic unit, floating point, floating point arithmetic, FLP operation, hybrid, hybrid logarithmic number system arithmetic unit, LNS addition-subtraction computation, LNS arithmetic, logarithmic number system, logic design},
+	pages = {55--58},
+	file = {06671617.pdf:C\:\\Users\\ed\\Zotero\\storage\\JMV9W8QZ\\06671617.pdf:application/pdf;Hybrid Logarithmic Number System Arithmetic Unit\: A Review - ResearchGate:C\:\\Users\\ed\\Zotero\\storage\\MPXQW4J6\\260677465_Hybrid_Logarithmic_Number_System_Arithmetic_Unit_A_Review.html:},
+}
+
+@inproceedings{garcia_lns_2004,
+	title = {{LNS} {Architectures} for {Embedded} {Model} {Predictive} {Control} {Processors}},
+	abstract = {This paper presents a research on arithmetic units targeted to implement model predictive control (MPC) in a custom embedded processor. A novel hardware implementation of cotransformation for the calculation of addition and subtraction in the Logarithmic Number System (LNS) is proposed. This architecture provides a small ROM-less adder/subtracter, with longer operation latency than other LNStechniques, but easily pipelineable. These characteristics make it very adequate for implementing the datapath of custom MPC embeddable microprocessors. A review of the arithmetic customization process is presented, including: an analysis of the finite precision problem, modifications to the standard MPC algorithm that simplify embedding the application, and the reasons that suggest better performance of LNSover standard floating-point (FP) architectures. The proposed arithmetic unit architecture for 16-bit LNSis fully synthesized for ASIC, and compared with an equivalent FP implementation. Area and clock cycle estimates are compared. Finally, considerations on low-precision implementations of LNSarithmetic units are provided, and an embedded-ROM implementation of addition/subtraction in LNSis proposed and analyzed.},
+	booktitle = {Processors,” in {International} {Conference} on {Compilers}, {Architectures} and {Synthesis} for {Embedded} {Systems}, (in press},
+	author = {Garcia, Jesus and Bleris, Leonidas and Arnold, Mark G. and Kothare, Mayuresh V.},
+	year = {2004},
+	pages = {79--84},
+	file = {Citeseer - Full Text PDF:C\:\\Users\\ed\\Zotero\\storage\\RXNNZUQU\\Garcia et al. - 2004 - LNS Architectures for Embedded Model Predictive Co.pdf:application/pdf},
+}
+
